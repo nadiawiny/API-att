@@ -49,10 +49,8 @@ serieRoutes.route('/update/:name').put(function (req, res) {
     } else {
         serie.name = req.body.name;
         serie.genero = req.body.genero;
-        serie.episodios = req.body.episodios;
         serie.temporadas = req.body.temporadas;
         serie.classificacao = req.body.classificacao;
-        serie.nota = req.body.nota;
 
         serie.save().then(business => {
           res.status(200).json({'status': 'success','mssg': 'Update complete'});

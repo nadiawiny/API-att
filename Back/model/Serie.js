@@ -8,17 +8,11 @@ let Serie = new Schema({
   genero: {
     type: String
   },
-  episodios: {
-    type: Number
-  },
   temporadas: {
     type: Number
   },
   classificacao: {
     type: String
-  },
-  nota: {
-    type: Number
   }
 },{
     collection: 'serie'

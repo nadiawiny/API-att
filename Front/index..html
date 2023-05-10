@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Busca de Filmes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./asset/css/main.css">
+  <link rel="stylesheet" href="./asset/css/noscript.css">
+</head>
+<div>
+    <header id="header">
+      <div class="content">
+        <div class="inner">
+          <h1>Busca de Series</h1>
+        </div>
+      </div>
+      <nav>
+        <div>
+          <!-- <input type="text" id="search-input" placeholder="Digite o nome da série"> -->
+          <button id="search-button" onclick="searchSerie()">Buscar</button>
+
+        </div>
+      </nav>
+      <nav>
+        <div>
+          <table>
+            <thead>
+              <br>
+              <tr>
+                <th>Nome:<p id='name'></p></th>
+              </tr>
+
+              <tr>
+                <th>Gênero: <p id='genero'></p></th>
+              </tr>
+
+              <tr>
+                <th>Temporadas: <p id='temporadas'></p></th>
+              </tr>
+
+              <tr>
+                <th>Classificação: <p id='classificacao'></p></th>
+              </tr>
+
+            </thead>
+              
+          </table>
+        </div>
+      </nav>
+    </header>
+
+    <script>
+    function searchSerie() {
+      $('#name').empty();
+      $('#genero').empty();
+      $('#temporadas').empty();
+      $('#classificacao').empty();
+
+      var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "http://127.0.0.1:3000/serie/",
+        "method": "GET"
+      }
+      
+      $.ajax(settings).done(function (response) {
+        console.log(response);
+        $('#name').append(response.series[0].name);
+        $('#genero').append(response.series[0].genero);
+        $('#temporadas').append(response.series[0].temporadas);
+        $('#classificacao').append(response.series[0].classificacao);
+      });
+
+    }
+  </script>
+
+</body>
+
+</html>

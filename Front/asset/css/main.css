@@ -174,7 +174,7 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6, th {
 		color: #ffffff;
 		font-weight: 600;
 		line-height: 1.5;
@@ -188,7 +188,7 @@ input, select, textarea {
 			text-decoration: none;
 		}
 
-		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
+		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major, th.major{
 			border-bottom: solid 1px #ffffff;
 			width: -moz-max-content;
 			width: -webkit-max-content;
