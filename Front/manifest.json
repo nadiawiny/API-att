@@ -1,22 +1,7 @@
 {
-  "background_color": "#13151980",
-  "description": "Site para buscar series",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "Busque Series",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "Busque Series",
-  "start_url": "/index..html",
-  "theme_color": "#13151980",
-  "categories": [
-    "news",
-    "shopping",
-    "social",
-    "utilities"
-  ],
-  "screenshots": [],
-  "icons": [
+    "name": "Buscar Series",
+    "short_name": "Buscar Series",
+    "icons": [
     {
       "src": "asset/img/icons/16.png",
       "type": "image/png",
@@ -50,19 +35,19 @@
     {
       "src": "asset/img/icons/92.png",
       "type": "image/png",
-      "sizes": "92X92",
+      "sizes": "92x92",
       "purpose": "any maskable"
     },
     {
       "src": "asset/img/icons/102.png",
       "type": "image/png",
-      "sizes": "102X102",
+      "sizes": "102x102",
       "purpose": "any maskable"
     },
     {
       "src": "asset/img/icons/114.png",
       "type": "image/png",
-      "sizes": "114X114",
+      "sizes": "114x114",
       "purpose": "any maskable"
     },
     {
@@ -90,6 +75,8 @@
       "purpose": "any maskable"
     }
   ],
-  "shortcuts": [],
-  "lang": "pt"
-}
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#13151980",
+    "theme_color": "#13151980"
+  }
