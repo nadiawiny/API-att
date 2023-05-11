@@ -1,0 +1,95 @@
+{
+  "background_color": "#13151980",
+  "description": "Site para buscar series",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Busque Series",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Busque Series",
+  "start_url": "/index..html",
+  "theme_color": "#13151980",
+  "categories": [
+    "news",
+    "shopping",
+    "social",
+    "utilities"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "asset/img/icons/16.png",
+      "type": "image/png",
+      "sizes": "16x16",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/20.png",
+      "type": "image/png",
+      "sizes": "20x20",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/29.png",
+      "type": "image/png",
+      "sizes": "29x29",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/32.png",
+      "type": "image/png",
+      "sizes": "32x32",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/55.png",
+      "type": "image/png",
+      "sizes": "55x55",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/92.png",
+      "type": "image/png",
+      "sizes": "92X92",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/102.png",
+      "type": "image/png",
+      "sizes": "102X102",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/114.png",
+      "type": "image/png",
+      "sizes": "114X114",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/196.png",
+      "type": "image/png",
+      "sizes": "196x196",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/216.png",
+      "type": "image/png",
+      "sizes": "216x216",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "asset/img/icons/1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [],
+  "lang": "pt"
+}

@@ -5,56 +5,65 @@
   <title>Busca de Filmes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#13151980"/>
+
+  <link  rel="manifest" href="./manifest.json">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./asset/css/main.css">
   <link rel="stylesheet" href="./asset/css/noscript.css">
+  <link rel="apple-touch-icon" href="./asset/img/icons/196.png">
+  
 </head>
 <div>
-    <header id="header">
-      <div class="content">
-        <div class="inner">
-          <h1>Busca de Series</h1>
-        </div>
+  <header id="header">
+    <div class="content">
+      <div class="inner">
+        <h1>Busca de Series</h1>
       </div>
-      <nav>
-        <div>
-          <!-- <input type="text" id="search-input" placeholder="Digite o nome da série"> -->
-          <button id="search-button" onclick="searchSerie()">Buscar</button>
+    </div>
+    <nav>
+      <div>
+        <!-- <input type="text" id="search-input" placeholder="Digite o nome da série"> -->
+        <button id="search-button" onclick="searchSerie()">Buscar</button>
 
-        </div>
-      </nav>
-      <nav>
-        <div>
-          <table>
-            <thead>
-              <br>
-              <tr>
-                <th>Nome:<p id='name'></p></th>
-              </tr>
+      </div>
+    </nav>
+    <nav>
+      <div>
+        <table>
+          <thead>
+            <br>
+            <tr>
+              <th>Nome:<p id='name'></p>
+              </th>
+            </tr>
 
-              <tr>
-                <th>Gênero: <p id='genero'></p></th>
-              </tr>
+            <tr>
+              <th>Gênero: <p id='genero'></p>
+              </th>
+            </tr>
 
-              <tr>
-                <th>Temporadas: <p id='temporadas'></p></th>
-              </tr>
+            <tr>
+              <th>Temporadas: <p id='temporadas'></p>
+              </th>
+            </tr>
 
-              <tr>
-                <th>Classificação: <p id='classificacao'></p></th>
-              </tr>
+            <tr>
+              <th>Classificação: <p id='classificacao'></p>
+              </th>
+            </tr>
 
-            </thead>
-              
-          </table>
-        </div>
-      </nav>
-    </header>
+          </thead>
 
-    <script>
+        </table>
+      </div>
+    </nav>
+  </header>
+
+  <script>
     function searchSerie() {
       $('#name').empty();
       $('#genero').empty();
@@ -67,7 +76,7 @@
         "url": "http://127.0.0.1:3000/serie/",
         "method": "GET"
       }
-      
+
       $.ajax(settings).done(function (response) {
         console.log(response);
         $('#name').append(response.series[0].name);
@@ -77,8 +86,12 @@
       });
 
     }
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('pwabuilder-sw.js')
+    }
+
   </script>
 
-</body>
+  </body>
 
 </html>
